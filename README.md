@@ -14,4 +14,6 @@ is UP or DOWN. If the url is DOWN an alert message will be published to AWS SNS.
 
 Setup a webtask cron job to handling monitoring websites and apis.
 
-wt cron schedule -n pingcron -s KEY_ID=AKID -s SECRET_ACCESS_KEY=SECRET "0 */2 * * * *" https://raw.githubusercontent.com/ryanfitz/webtask-pingdom/master/ping.js
+```
+  $ wt cron schedule -n pingcron -s KEY_ID=AKID -s SECRET_ACCESS_KEY=SECRET "0 */2 * * * *" https://raw.githubusercontent.com/ryanfitz/webtask-pingdom/master/ping.js
+```
